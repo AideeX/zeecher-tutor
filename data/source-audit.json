@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "id": "970605695",
+      "filename": "970605695-The-Complete-Scheme-of-Work-for-Pre-primary-Primary-Schools.pdf",
+      "pages": 985,
+      "file_hash": "e3568583940a51198c4ecedd88d56de107e979d2db925b3682ea2350a305c26c",
+      "authority_tier": "private_compilation",
+      "rights_status": "private_reference_only",
+      "review_status": "needs_review"
+    },
+    {
+      "id": "537689481",
+      "filename": "537689481-Lagos-State-Scheme-of-Work-for-Primary-4-6-1-1.pdf",
+      "pages": 391,
+      "file_hash": "5290799cc5e7faa49c3aaea8e9e50124a3b98fbe6ba145adbbf14669234a8359",
+      "authority_tier": "historical_lagos",
+      "rights_status": "private_reference_only",
+      "review_status": "needs_review"
+    },
+    {
+      "id": "730125829",
+      "filename": "730125829-y75XyadLS3uMzHi6bEyk-Scheme-of-Work-for-Nursery-and-Primary-School-in-Nigeria-Pdfpdf.pdf",
+      "pages": 21,
+      "file_hash": "687b2f1a8557cf98006a9a7e85e496aabd9f0c25a6082f3fe7d969746acd1489",
+      "authority_tier": "sales_sample",
+      "rights_status": "private_reference_only",
+      "review_status": "needs_review"
+    },
+    {
+      "id": "915968705",
+      "filename": "915968705-Unified-Schemes-of-Work-for-Primary-1-3.pdf",
+      "pages": 12,
+      "file_hash": "5e1a5bc974dd6ba51da62064858b2bc14beef5b82970bdde6816c1f1a89fcdad",
+      "authority_tier": "partial_unverified_lagos",
+      "rights_status": "private_reference_only",
+      "review_status": "needs_review"
+    },
+    {
+      "id": "978433855",
+      "filename": "978433855-Pre-primary-Primary-Schools-Nerdc-Scheme-2025.pdf",
+      "pages": 987,
+      "file_hash": "835b7ee260d400ba9ee5f92aa0e84e70253d9f2e147373b6aa72c004e38d9116",
+      "authority_tier": "private_compilation",
+      "rights_status": "private_reference_only",
+      "review_status": "needs_review"
+    }
+  ],
+  "duplicate_pages": 660,
+  "candidate_rows": 4180,
+  "exact_duplicate_candidates_removed": 11,
+  "review_status": "needs_review",
+  "official_outcomes_mapped": 0
+}
