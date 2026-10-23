@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.local/
+reference-pdfs/
+.env*
+!.env.example
+*.tsbuildinfo
+playwright-report/
+test-results/
+__pycache__/
+*.pyc

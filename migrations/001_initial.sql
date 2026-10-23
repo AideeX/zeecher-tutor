@@ -1,0 +1,18 @@
+PRAGMA foreign_keys=ON;
+CREATE TABLE IF NOT EXISTS parent(id TEXT PRIMARY KEY, username TEXT NOT NULL UNIQUE, password_hash TEXT NOT NULL, created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS learner(id TEXT PRIMARY KEY, parent_id TEXT NOT NULL REFERENCES parent(id), nickname TEXT NOT NULL, grade INTEGER NOT NULL CHECK(grade IN(2,5)), settings TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS auth_session(token_hash TEXT PRIMARY KEY,parent_id TEXT NOT NULL REFERENCES parent(id), learner_id TEXT REFERENCES learner(id), expires_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS curriculum_source(id TEXT PRIMARY KEY, metadata TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS curriculum_outcome(id TEXT PRIMARY KEY,metadata TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS learning_sequence(outcome_id TEXT PRIMARY KEY REFERENCES curriculum_outcome(id),term INTEGER,week INTEGER,prerequisite_ids TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS curriculum_conflict(id TEXT PRIMARY KEY, metadata TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'open');
+CREATE TABLE IF NOT EXISTS lesson_session(id TEXT PRIMARY KEY,learner_id TEXT NOT NULL REFERENCES learner(id),skill_id TEXT NOT NULL REFERENCES curriculum_outcome(id),mode TEXT NOT NULL,started_at INTEGER NOT NULL,ended_at INTEGER,current_variant INTEGER NOT NULL DEFAULT 0,assisted INTEGER NOT NULL DEFAULT 0,phase TEXT NOT NULL DEFAULT 'independent',question_started INTEGER NOT NULL,summary TEXT);
+CREATE TABLE IF NOT EXISTS learner_attempt(id TEXT PRIMARY KEY,learner_id TEXT NOT NULL REFERENCES learner(id),session_id TEXT NOT NULL REFERENCES lesson_session(id),skill_id TEXT NOT NULL REFERENCES curriculum_outcome(id),question_id TEXT NOT NULL,response TEXT NOT NULL,answer_key TEXT NOT NULL,correct INTEGER NOT NULL,assisted INTEGER NOT NULL,transfer INTEGER NOT NULL,created_at INTEGER NOT NULL,elapsed_ms INTEGER NOT NULL,evaluator TEXT NOT NULL DEFAULT 'deterministic');
+CREATE TABLE IF NOT EXISTS help_event(id TEXT PRIMARY KEY,learner_id TEXT NOT NULL REFERENCES learner(id),session_id TEXT NOT NULL REFERENCES lesson_session(id),question_id TEXT NOT NULL,kind TEXT NOT NULL,created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS review_schedule(learner_id TEXT NOT NULL REFERENCES learner(id),outcome_id TEXT NOT NULL REFERENCES curriculum_outcome(id),next_review_due INTEGER NOT NULL,PRIMARY KEY(learner_id,outcome_id));
+CREATE TABLE IF NOT EXISTS writing_revision(id TEXT PRIMARY KEY,learner_id TEXT NOT NULL REFERENCES learner(id),draft_id TEXT NOT NULL,text TEXT NOT NULL,feedback TEXT NOT NULL,created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS audit_event(id TEXT PRIMARY KEY,parent_id TEXT NOT NULL REFERENCES parent(id),action TEXT NOT NULL,metadata TEXT NOT NULL,created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS rate_limit(key TEXT PRIMARY KEY,count INTEGER NOT NULL,reset_at INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS attempts_learner ON learner_attempt(learner_id,skill_id);
+CREATE INDEX IF NOT EXISTS session_learner ON lesson_session(learner_id);
+PRAGMA user_version=1;

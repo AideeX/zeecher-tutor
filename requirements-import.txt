@@ -1,0 +1,2 @@
+# Developer-only local PDF ingestion; not needed by the deployed tutor.
+PyMuPDF==1.26.6

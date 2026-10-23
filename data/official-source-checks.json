@@ -1,0 +1,133 @@
+[
+  {
+    "id": "revised-index",
+    "url": "https://nerdc.gov.ng/content_manager/new_curriculum_home.html",
+    "checked_at": "2026-10-23",
+    "status": "retrieved_for_review",
+    "http_status": 200,
+    "final_url": "https://nerdc.gov.ng/content_manager/new_curriculum_home.html",
+    "bytes": 19549,
+    "file_hash": "8084c2447a0a3b8b5e40a5077ddac31dc6b725abee94c2ede0195d21c0aaf529"
+  },
+  {
+    "id": "approved-subjects",
+    "url": "https://www.nerdc.org.ng/Doc/NERDC-approved-subjects-notice.pdf",
+    "checked_at": "2026-10-23",
+    "status": "retrieved_for_review",
+    "http_status": 200,
+    "final_url": "https://www.nerdc.org.ng/Doc/NERDC-approved-subjects-notice.pdf",
+    "bytes": 964421,
+    "file_hash": "f2c35e5f841bc8aeca98842f24b320ec340ce9caa833bae5641d2152d0d407e4"
+  },
+  {
+    "id": "ncee",
+    "url": "https://neco.gov.ng/exams/ncee",
+    "checked_at": "2026-10-23",
+    "status": "retrieved_for_review",
+    "http_status": 200,
+    "final_url": "https://neco.gov.ng/exams/ncee",
+    "bytes": 464,
+    "file_hash": "f4e47fd4231c26a15db8769d1ecc5851f8c63894e09961bb25c8a05c444f4a69"
+  },
+  {
+    "id": "under18-policy",
+    "url": "https://developers.openai.com/api/docs/guides/safety-checks/under-18-api-guidance",
+    "checked_at": "2026-10-23",
+    "status": "retrieved_for_review",
+    "http_status": 200,
+    "final_url": "https://developers.openai.com/api/docs/guides/safety-checks/under-18-api-guidance",
+    "bytes": 374317,
+    "file_hash": "c46c07019d782645bccbecad4263242d1923cf5f7de987b980a4fe8dde28d59e"
+  },
+  {
+    "id": "legacy-maths-p1-3",
+    "url": "https://nerdc.gov.ng/content_manager/primary/pri1-3_maths.pdf",
+    "checked_at": "2026-10-23",
+    "status": "retrieved_for_review",
+    "http_status": 200,
+    "final_url": "https://nerdc.gov.ng/content_manager/primary/pri1-3_maths.pdf",
+    "bytes": 940301,
+    "file_hash": "09d6b52b54b2f6b00d5279a58650d0ef10ab5a6a5d3da02d10b24c42edb1058a"
+  },
+  {
+    "id": "legacy-maths-p4-6",
+    "url": "https://nerdc.gov.ng/content_manager/primary/pri4-6_maths.pdf",
+    "checked_at": "2026-10-23",
+    "status": "retrieved_for_review",
+    "http_status": 200,
+    "final_url": "https://nerdc.gov.ng/content_manager/primary/pri4-6_maths.pdf",
+    "bytes": 1340205,
+    "file_hash": "91fe69d3fed70762f334d3a5e850a062fbe542c16547c44b6f38da0de3683454"
+  },
+  {
+    "id": "legacy-science-p1-3",
+    "url": "https://nerdc.gov.ng/content_manager/primary/pri1-3_basic_science_technology.pdf",
+    "checked_at": "2026-10-23",
+    "status": "retrieved_for_review",
+    "http_status": 200,
+    "final_url": "https://nerdc.gov.ng/content_manager/primary/pri1-3_basic_science_technology.pdf",
+    "bytes": 977271,
+    "file_hash": "46a3a15359c44c7398cff392f8c01c442c9300c27302eba0ac8726703ef86e35"
+  },
+  {
+    "id": "legacy-science-p4-6",
+    "url": "https://nerdc.gov.ng/content_manager/primary/pri4-6_basic_science_technology.pdf",
+    "checked_at": "2026-10-23",
+    "status": "retrieved_for_review",
+    "http_status": 200,
+    "final_url": "https://nerdc.gov.ng/content_manager/primary/pri4-6_basic_science_technology.pdf",
+    "bytes": 1378694,
+    "file_hash": "4f0a95e859f4569d535197f06b80b7b903d35385a0be0209454964704b5ad584"
+  },
+  {
+    "id": "revised-p1",
+    "url": "https://lmis.nerdcportals.com.ng/pry_1",
+    "checked_at": "2026-10-23",
+    "status": "inaccessible",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "revised-p2",
+    "url": "https://lmis.nerdcportals.com.ng/pry_2",
+    "checked_at": "2026-10-23",
+    "status": "inaccessible",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "revised-p3",
+    "url": "https://lmis.nerdcportals.com.ng/pry_3",
+    "checked_at": "2026-10-23",
+    "status": "inaccessible",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "revised-p4",
+    "url": "https://lmis.nerdcportals.com.ng/pry_4",
+    "checked_at": "2026-10-23",
+    "status": "inaccessible",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "revised-p5",
+    "url": "https://lmis.nerdcportals.com.ng/pry_5",
+    "checked_at": "2026-10-23",
+    "status": "inaccessible",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "revised-p6",
+    "url": "https://lmis.nerdcportals.com.ng/pry_6",
+    "checked_at": "2026-10-23",
+    "status": "inaccessible",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "ncee-2026-notice",
+    "url": "https://neco.gov.ng/2026%20NCEE%20ADVERT%20AND%20POSTER%20-%20GENERAL%20INFO.pdf",
+    "checked_at": "2026-10-23",
+    "status": "retrieved_for_review",
+    "http_status": 200,
+    "bytes": 353067,
+    "file_hash": "9f661360b98f15c85e94b15b7e4ed7a93bfc927dbe7fa87bc8df8c1d2ee73273"
+  }
+]
