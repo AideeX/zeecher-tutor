@@ -2,6 +2,8 @@
 
 A working local tutor for a parent-managed family, with separate Primary 2 (Explorer) and Primary 5 (Challenger) journeys. Built with Next.js App Router, React, TypeScript and SQLite. It works without an AI API key.
 
+**Firebase migration Phase 1:** preservation and integration foundations are prepared, but Firebase is not connected. The app still uses SQLite. See [Phase 1 scope](docs/firebase/PHASE_1.md), [architecture](docs/firebase/ARCHITECTURE.md), [location/retention proposals](docs/firebase/REGION_AND_RETENTION.md) and [future setup checkpoints](docs/firebase/FIREBASE_SETUP.md). Do not create a Firestore database until its location is approved.
+
 This is a tested first implementation, with a small original teaching bank. It is **not** an exhaustive, verified NERDC curriculum or a complete entrance-exam simulator. See [implementation evidence](IMPLEMENTATION_STATUS.md) and [source audit](docs/CURRICULUM_SOURCE_AUDIT.md).
 
 ## Run
@@ -86,7 +88,7 @@ Publishing this cloud environment restores its prepared files; it does not deplo
 
 For a visual preview, open [Explorer on desktop](docs/screenshots/explorer-desktop.png), [Challenger on mobile](docs/screenshots/challenger-mobile.png), [a maths lesson](docs/screenshots/maths-lesson.png) or [the parent dashboard](docs/screenshots/parent-dashboard.png). These screenshots use temporary test data.
 
-For an interactive preview on your own computer, use the source archive supplied with the verification report. It contains the current application, migrations, original sample content, lockfile and documentation; it excludes private PDFs, setup codes, credentials, family data, dependencies and build output. The current application files have not been committed to Git, so use this archive or a copy of the workspace files.
+For an interactive preview on your own computer, use the source archive supplied with the verification report. It contains the current application, migrations, original sample content, lockfile and documentation; it excludes private PDFs, setup codes, credentials, family data, dependencies and build output. The original application is committed to Git. Select the branch containing the work you want to preview; a previously supplied archive will not automatically include later migration phases.
 
 Install Node 24 or newer. Extract the archive, then run:
 

@@ -9,3 +9,9 @@ playwright-report/
 test-results/
 __pycache__/
 *.pyc
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+*-firebase-adminsdk-*.json
+service-account*.json

@@ -85,3 +85,15 @@ Fresh verification results: typecheck and lint passed; 9 Node tests passed; 4 Py
 The production server was restarted on port 3000 because processes do not survive publication. The `/api/state` response and the appropriate initial browser screen were checked without creating or resetting family records. Published install/start instructions were read and remain applicable; no new environment configuration draft was required.
 
 README now explains the distinction between a published environment and a public website, links screenshots, and gives exact steps for running an interactive local preview from the provided source archive. The archive excludes private corpus/data/auth files and is kept under ignored `.local/artifacts/`. All limitations in the milestones above remain in effect.
+
+## Firebase migration Phase 1 — 24 October 2026
+
+Scope: preservation baseline and inactive integration architecture only. Original active application, engine, content, SQL migrations and existing tests remain unchanged. SQLite remains the active storage/authentication implementation. Firebase Auth/Firestore SDK integration, live family provisioning, multi-profile UI, cloud setup and public deployment have not started.
+
+Added family/learner/domain contracts (P1–P6), pure ownership/role/session-grant guards, administrator invitation boundaries, family-scoped paths, asynchronous repository/service ports, configuration validation and a server-only diagnostic module. Added closed, undeployed Firestore rules, draft indexes, loopback emulator configuration, commented future environment variables and beginner setup documentation. The sole new runtime dependency is `server-only@0.0.1`; no Firebase SDK or connection is initialized.
+
+Preservation uses 52 pre-phase file hashes, a golden curriculum/assessment fingerprint, a 22-file active-code/data/test check, and private read-only database inventory. New tests exercise family/sibling isolation guards, administrator limits, expired/revoked grants, tenant/score injection, P1–P6 boundaries, emulator misconfiguration, secret redaction, and read-only SQLite inventory. These are foundation unit/SQLite integration checks; real Firebase Auth, Firestore rule/emulator and cloud integration tests are deferred to Phase 2.
+
+Proposals awaiting approval: Johannesburg (`africa-south1`) with Vercel Cape Town (`cpt1`), after Nigeria latency/cost/privacy checks; raw activity 90 days, writing 180 days, backups 30 days, with minimized mastery evidence retained separately. No location is selected and no retention deletion is enabled. See docs/firebase/REGION_AND_RETENTION.md.
+
+Phase 1 final verification: **passed** — typecheck, lint, all 31 Node tests, 4 corpus tests, 3 development browser flows, production build and the same 3 production browser flows. The 22-file active-code preservation check and full curriculum/assessment fingerprints pass. See docs/firebase/PHASE_1.md for scope and evidence. Stop after this phase and explain Phase 2 before proceeding, as requested. No Firebase/Vercel configuration is currently required from the owner.

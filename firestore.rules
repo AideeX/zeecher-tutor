@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Phase 1 draft, NOT deployed. Browsers must use the Next.js API.
+    // Admin SDK calls bypass these rules: tenant authorization is also required
+    // in every server handler/repository. Being signed in grants no direct access.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
