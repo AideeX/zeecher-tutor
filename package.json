@@ -17,12 +17,15 @@
     "setup": "tsx scripts/setup.ts",
     "import:curriculum": "python3 scripts/import_curriculum.py",
     "inventory": "tsx scripts/export_inventory.ts",
-    "test:curriculum": "python3 -m unittest discover -s tests -p 'test_*.py' -v"
+    "test:curriculum": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "migration:inventory": "tsx scripts/migration/inventory.ts",
+    "migration:verify-baseline": "tsx scripts/migration/verify-baseline.ts"
   },
   "dependencies": {
     "next": "16.4.3",
     "react": "19.3.1",
     "react-dom": "19.3.1",
+    "server-only": "0.0.1",
     "zod": "^4.0.0"
   },
   "devDependencies": {
